@@ -1,0 +1,81 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure the app covers the full height */
+}
+
+.main-content {
+  margin-left: 20%; /* Width of the sidebar */
+  width: 80%; /* Remaining width of the screen */
+  height: calc(100vh - 50px); /* Full height minus top bar height */
+  overflow: auto;
+  padding: 20px;
+  margin-top: 50px; /* Space for the top bar */
+}
+
+.content {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.topbar {
+  background-color: #FF6600; /* Matching the left pane color */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.topbar .welcome-message {
+  font-size: 1rem; /* Adjust font size for better visibility */
+  margin-left: 20px; /* Space from the start of the top bar */
+}
+
+.topbar .app-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.topbar .app-name img {
+  width: 40px; /* Adjust the image size as needed */
+  height: 40px; /* Adjust the image size as needed */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.topbar .app-name h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.topbar .admin-username {
+  margin-left: auto; /* Pushes the admin username to the far right */
+  font-size: 0.9rem;
+  color: white;
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin-right: 20px; /* Adjust this value to move slightly left */
+}
